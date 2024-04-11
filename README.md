@@ -27,7 +27,7 @@ Key responsibilities and skills:
    Working closely with other departments, such as marketing, finance, and operations, to understand their data needs and provide insights,
    Effectively communicating complex data findings in a clear and concise manner to non-technical stakeholders,
 
-6. Continuous Learning and Adaptation:
+6. Continuous Learning and Adaptation: 
 
 Keeping up-to-date with the latest industry trends, tools, and technologies in data analysis.
 Adapting to new types of data and analytical methods as the organization's needs evolve.
