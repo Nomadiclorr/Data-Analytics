@@ -52,7 +52,9 @@ Analysts use a variety of techniques to draw conclusions from the data at their 
 3. Prescriptive Analytics
 
 **Machine Learning, Artificial Intelligence, and Deep Learning**
+
 Data analytics is intellectually and computationally demanding therefore, you do not always have to do this work yourself; you can rely on automated techniques to help you unlock the hidden value in your data.
+
 *Machine learning* uses algorithms to discover knowledge in your datasets that you can then apply to help you make informed decisions about the future. Machine learning (ML) is a subset of AI techniques. ML techniques attempt to apply statistics to data problems in an effort to discover new knowledge. 
 
 *Artificial intelligence* (AI) includes any type of technique where you are attempting to get a computer system to imitate human behavior. As the name implies, you are trying to ask computer systems to artificially behave as if they were intelligent.
@@ -61,6 +63,36 @@ Data analytics is intellectually and computationally demanding therefore, you do
 
 
 ## Chapter 2: Understanding Data
+**Exploring Data Types**
+A ***data element*** is an attribute about a person, place, or thing containing data within a range of values.
+A ***data type*** limits the values a data element can have.
+
+**Tabular Data**
+Tabular data is data organized into a table, made up of columns and rows. A table represents information about a single topic. Each column represents a uniquely named field within a table, also called a variable, about a single characteristic. Spreadsheets, including Microsoft Excel, Google Sheets, and Apple Numbers, are practical tools for representing tabular data. 
+
+**Structured Data Types**
+Structured data is tabular in nature and organized into rows and columns.
+
+- Numeric
+- Whole Numbers
+- Rational Numbers
+- Date and Time
+- Currency
+- 
+**Character**
+The character data type limits data entry to only valid characters.
+
+**Alphanumeric** 
+This is the most widely used data type for storing character-based data. As the name implies, alphanumeric is appropriate when a data element consists of both numbers and letters.
+
+**Unstructured Data Types**
+Unstructured data is any type of data that does not fit neatly into the tabular model. Examples of unstructured data include digital images, audio recordings, video recordings, and open-ended survey responses.
+
+- Binary
+- Audio
+- Images
+- Video
+- Large Text
 
 
 # Module 2: Module 2: Data Preparation and Exploration
