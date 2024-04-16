@@ -135,8 +135,24 @@ HyperText Markup Language (HTML) is a markup language for documents designed to 
 
 
 
-# Module 2: Module 2: Data Preparation and Exploration
+# Module 2: Data Preparation and Exploration
 ## Chapter 3: Databases and Data Acquisition
+### Exploring Databases
+**Database categories**
+1. Relational
+   Relational databases excel at storing and processing structured data.
+   The relational model builds on the concept of tabular data. In the relational model, an entity contains data for a single subject.
+3. Non-relational
+   The need to interact with unstructured data is one of the reasons behind the rise of nonrelational databases.
+   
+**The entity relationship diagram (ERD)** is a visual artifact of the data modeling process. It shows the connection between related entities. 
+**Cardinality** refers to the relationship between two entities, showing how many instances of one entity relate to instances in another entity. You specify cardinality in an ERD with various line endings. 
+
+
+
+   
+
+
 ## Chapter 4: Data Quality
 ## Chapter 5: Data Analysis and Statistics
 
