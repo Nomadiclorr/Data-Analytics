@@ -150,7 +150,53 @@ HyperText Markup Language (HTML) is a markup language for documents designed to 
 
 ![Cardinality](Cardinality.PNG)
 
-   
+**Types of Relationships**
+1. A unary relationship is when an entity has a connection with itself. For example, a unary relationship where a single manager has multiple employees.
+2. A binary relationship connects two entities.
+3. A ternary relationship connects three entities. For example, you might use a ticket entity to connect a venue, a performing artist, and a price.
+
+### Relational Databases
+Relational entities correspond to database tables, and entity attributes correspond to table columns. 
+A **database schema** defines how data is organized within a relational database. It encompasses logical constraints such as table names, fields, data types, and the relationships between these entities. 
+A **primary key** is one or more attributes that uniquely identify a specific row in a table.  
+A **foreign key** is one or more columns in one table that points to corresponding columns in a related table.
+Frequently, a foreign key references another table's primary key.
+A **composite primary key** is a primary key with more than one column.
+
+
+To pull data from a relational database table, you perform a query. You compose queries using a programming language called Structured Query Language (SQL).
+A **join** uses data values from one table to retrieve associated data in another table, typically using a foreign key.
+
+**Relational Database Providers**
+Oracle is one of the most mature database platforms and was first released in 1979. Microsoft developed SQL Server, and the open source community created offerings including MySQL, MariaDB, and PostgreSQL. Amazon Web Services (AWS) developed Aurora, which is compatible with MySQL and PostgreSQL. Aurora is unique because it takes advantage of AWS's underlying cloud platform and is easy to scale. 
+
+### Nonrelational Databases
+A nonrelational database does not have a predefined structure based on tabular data. 
+
+**Examples of nonrelational databases:**
+1. Key-value
+   Data is stored as a collection of keys and their corresponding values.
+   A key must be globally unique across the entire database.
+   Since there are no underlying table structures and few limitations on the data that can be stored, operating a key-value database is much simpler than a relational database. It also can scale to accommodate        many simultaneous requests without impacting performance. 
+3. Document
+   A document database is similar to a key-value database, with additional restrictions. In a key-value database, the value can contain anything. With a document database, the value is restricted to a specific        structured format.
+5. Column family
+   Column-family databases use an index to identify data in groups of related columns. 
+7. Graph
+   Graph databases specialize in exploring relationships between pieces of data.
+   Graph models map relationships between actual pieces of data.
+
+### Database Use Cases
+Different business needs require different database designs. While all databases store data, the database's structure needs to match its intended purpose.
+**Databases tend to support two major categories of data processing:**
+1. Online Transactional Processing (OLTP)
+   OLTP systems handle the transactions we encounter every day.
+   Example transactions include booking a flight reservation, ordering something online, or executing a stock trade.
+3. Online Analytical Processing (OLAP).
+
+### Normalization
+Normalization is a process for structuring a database in a way that minimizes duplication of data. 
+
 
 
 ## Chapter 4: Data Quality
