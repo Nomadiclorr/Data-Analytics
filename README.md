@@ -192,11 +192,38 @@ Different business needs require different database designs. While all databases
 1. Online Transactional Processing (OLTP)
    OLTP systems handle the transactions we encounter every day.
    Example transactions include booking a flight reservation, ordering something online, or executing a stock trade.
+   OLTP databases need to balance transactional read and write performance, resulting in a highly normalized design. Typically, OLTP databases are in 3NF.
 3. Online Analytical Processing (OLAP).
+   OLAP systems focus on the ability of organizations to analyze data.
+   OLAP systems have a denormalized design. Instead of having data distributed across multiple tables, denormalization results in wider tables than those found in an OLTP database.
+   
 
 ### Normalization
 Normalization is a process for structuring a database in a way that minimizes duplication of data. 
 
+1. First normal form (1NF) is when every row in a table is unique and every column contains a unique value.
+2. Second normal form (2NF) starts where 1NF leaves off. In addition to each row being unique, 2NF applies an additional rule stating that all nonprimary key values must depend on the entire primary key.
+3. Third normal form (3NF) builds upon 2NF by adding a rule stating all columns must depend on only the primary key. 
+
+### Schema Concepts
+The design of a database schema depends on the purpose it serves. Transactional systems require highly normalized databases, whereas a denormalized design is more appropriate for analytical systems. 
+A **data warehouse** is a database that aggregates data from many transactional systems for analytical purposes.
+A **data mart** is a subset of a data warehouse. Data warehouses serve the entire organization, whereas data marts focus on the needs of a particular department within the organization.
+A **data lake** stores raw data in its native format instead of conforming to a relational database structure. Using a data lake is more complex than a data warehouse or data mart, as it requires additional knowledge about the raw data to make it analytically useful. 
+
+**Types of schemas / design patterns for data warehouses**
+1. The star schema
+   Designed to facilitate analytical processing gets its name from what the schema looks like when looking at its entity relationship diagram.
+   Star schemas are denormalized to improve read performance over large datasets.
+   At the centre of the star is a fact table. Fact tables chiefly store numerical facts about a business and are surrouned by fact tables.
+   When data moves from an OLTP design into a star schema, there is a significant amount of data duplication. As such, a star schema consumes more space than its associated OLTP design to store the same data.
+2. Snowflake
+   Snowflake and star schemas are conceptually similar in that they both have a central fact table surrounded by dimensions.
+   With a star, the dimension tables connect directly to the fact table. With a snowflake, dimensions have subcategories, which gives the snowflake design its shape. A snowflake schema is less denormalized than       the star schema.
+
+### Dimensionality
+
+   
 
 
 ## Chapter 4: Data Quality
