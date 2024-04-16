@@ -148,7 +148,7 @@ HyperText Markup Language (HTML) is a markup language for documents designed to 
 **The entity relationship diagram (ERD)** is a visual artifact of the data modeling process. It shows the connection between related entities. 
 **Cardinality** refers to the relationship between two entities, showing how many instances of one entity relate to instances in another entity. You specify cardinality in an ERD with various line endings. 
 
-
+![Cardinality](Cardinality.PNG)
 
    
 
