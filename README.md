@@ -1,7 +1,6 @@
-# Week 1
-
 # Module 1: The Basics of Data
-Data analytics is the collection, transformation, and organization of data in order to draw conclusions, make predictions, and drive informed decision making. It is a compelling subject that transcends industry boundaries. Data analytics can be branched into two primary components: conceptual understanding of data (theoretical aspect) and hands-on manipulation of data (practical aspect). 
+Data analytics is the collection, transformation, and organization of data in order to draw conclusions, make predictions, and drive informed decision making. It is a compelling subject that transcends industry boundaries. Data analytics can be branched into two primary components: conceptual understanding of data (theoretical aspect) and hands-on manipulation of data (practical aspect).
+To perform analytics, you need data. Data can come from internal systems you operate, or you can obtain it from third-party sources. 
 
 ## Chapter 1: The Data Analyst
 The ultimate role of a data analyst is to transform raw data into actionable insights that guide decision-making processes within an organization.
@@ -222,6 +221,59 @@ A **data lake** stores raw data in its native format instead of conforming to a 
    With a star, the dimension tables connect directly to the fact table. With a snowflake, dimensions have subcategories, which gives the snowflake design its shape. A snowflake schema is less denormalized than       the star schema.
 
 ### Dimensionality
+Dimensionality refers to the number of attributes a table has. 
+A dimension table provides additional context around data in fact tables. Dimensions are subject to change overtime, e.g adress.
+
+
+### Integration
+Data from transactional systems flow into data warehouses and data marts for analysis.
+You need to retrieve, reshape, and insert data to move data between operational and analytical environments.
+
+**Methods to transfer data efficiently and effectively:**
+1. Extract
+   Extract data from the source system and place it in a staging area. The goal of the extract phase is to move data from a relational database into a flat file as quickly as possible.
+3. Transform
+   The goal is to reformat the data from its transactional structure to the data warehouse's analytical design.
+5. Load
+   The purpose of the load phase is to ensure data gets into the analytical system as quickly as possible.
+
+One key difference between ETL and ELT is the technical component performing the transformation. With ETL, the data transformation takes place external to a relational database, using a programming language like Python. ELT uses SQL and the power of a relational database to reformat the data. ELT has an advantage in the speed with which data moves from the operational to the analytical database.
+
+### ETL Vendors
+Whether you choose ETL or ELT for loading your data warehouse, you don't have to write transformations by hand. Many products support both ETL and ELT.
+
+An initial load occurs the first time data is put into a data warehouse. After that initial load, each additional load is a **delta load**, also known as an **incremental load**. A delta load only moves changes between systems. 
+The frequency with which delta loads happen depends on business requirements. Depending on how fresh the data needs to be, delta loads can happen at any interval. Hourly, daily, and weekly refreshes are typical.
+The **batch window** is the time period available to move data into your data warehouse. 
+
+### Data Collection Methods
+Data can come from various sources, including federal and state open data portals, other public data sources, and private purveyors of data.
+
+**Sources of Data**
+1. Application Programming Interfaces (APIs)
+   An application programming interface (API) is a structured method for computer systems to exchange information. APIs provide a consistent interface to calling applications, regardless of the internal database      structure. APIs can be transactional, returning data as JSON objects. APIs can also facilitate bulk data extraction, returning CSV files.
+   Many APIs, like those available from the NCEI, require an API key. If you imagine an API as the door behind which data treasures exist, an API key is what unlocks the door.
+   
+3. Web Services
+   Data is also found in private and public data sources and is accessible via a web service. A web service is an API you can call via Hypertext Transfer Protocol (HTTP), the language of the World Wide Web.
+   
+5. Web Scraping
+   You can use software bots to scrape data from a website. Many modern programming languages, including Python and R, make it easy to create a web scraper. Instead of using an API or a web service, a web scraper     reads a web page similar to a browser, such as Chrome, Safari, or Edge. Web scrapers read and parse the HTML to extract the data the web pages contain.
+7. Human-in-the-Loop
+   There are times when the data you seek exists only in people's minds.
+   Even with all of these data sources, you may still want insight into how customers feel about the services you provide.
+9. Surveys
+    One way to collect data directly from your customers is by conducting a survey. The most simplistic surveys consist of one question and indicate customer satisfaction.
+11. Survey Tools
+    Instead of designing a custom application to collect survey data, several survey products let you design complex surveys without worrying about building a database. Qualtrics is a powerful tool for developing      and administering surveys.
+13. Observation
+    Observation is the act of collecting primary source data, from either people or machines. Observational data can be qualitative or quantitative. 
+15. Sampling
+    For larger statistical groups you might collect a sample, or subset, of the overall population. Once you have collected sample data, you can use statistical methods to make generalizations about the entire         population.
+
+
+
+
 
    
 
