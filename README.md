@@ -269,7 +269,26 @@ Data can come from various sources, including federal and state open data portal
 13. Observation
     Observation is the act of collecting primary source data, from either people or machines. Observational data can be qualitative or quantitative. 
 15. Sampling
-    For larger statistical groups you might collect a sample, or subset, of the overall population. Once you have collected sample data, you can use statistical methods to make generalizations about the entire         population.
+    For larger statistical groups you might collect a sample, or subset, of the overall population. Once you have collected sample data, you can use statistical methods to make generalizations about the entire population.
+
+
+### Working With Data
+To turn a database design into an operational database ready to accept data, you use the Data Definition Language (DDL) components of SQL. DDL lets you create, modify, and delete tables and other associated database objects.
+
+With all of that work complete, the foundation is in place to derive impactful insights. To generate insights, a productive analyst must be comfortable using the Data Manipulation Language (DML) capabilities of SQL to insert, modify, and retrieve information from databases. While DDL manages the structure of a database, DML manages the data in the database.
+
+#### Data Manipulation
+When manipulating data, one of four possible actions occurs:
+
+1. Create - INSERT - Creates new data in an existing table.
+2. Read - SELECT - Retrieves data from an existing table.
+3. Update - UPDATE - Changes existing data in an existing table.
+4. Delete - DELETE - Removes existing data from an existing table.
+
+#### SQL Considerations
+The keywords in SQL are case-insensitive. However, the case-sensitivity of column names and values depend on the database configuration.
+
+
 
 
 
