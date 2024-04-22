@@ -272,21 +272,74 @@ Data can come from various sources, including federal and state open data portal
     For larger statistical groups you might collect a sample, or subset, of the overall population. Once you have collected sample data, you can use statistical methods to make generalizations about the entire population.
 
 
-### Working With Data
-To turn a database design into an operational database ready to accept data, you use the Data Definition Language (DDL) components of SQL. DDL lets you create, modify, and delete tables and other associated database objects.
+### Working with data
+To turn a database design into an operational database ready to accept data, you use the **Data Definition Language (DDL)** components of SQL. DDL lets you create, modify, and delete tables and other associated database objects.
+To generate insights, a productive analyst must be comfortable using the **Data Manipulation Language (DML)** capabilities of SQL to insert, modify, and retrieve information from databases. While DDL manages the structure of a database, DML manages the data in the database.
 
-With all of that work complete, the foundation is in place to derive impactful insights. To generate insights, a productive analyst must be comfortable using the Data Manipulation Language (DML) capabilities of SQL to insert, modify, and retrieve information from databases. While DDL manages the structure of a database, DML manages the data in the database.
+### Data Manipulation
+**When manipulating data, one of four possible actions occurs:**
+1. **C**reate new data(Insert).
+2. **R**ead existing data(Select).
+3. **U**pdate existing data(Update).
+4. **D**elete existing data(Delete).
 
-#### Data Manipulation
-When manipulating data, one of four possible actions occurs:
-
-1. Create - INSERT - Creates new data in an existing table.
-2. Read - SELECT - Retrieves data from an existing table.
-3. Update - UPDATE - Changes existing data in an existing table.
-4. Delete - DELETE - Removes existing data from an existing table.
-
-#### SQL Considerations
+### SQL Considerations
 The keywords in SQL are case-insensitive. However, the case-sensitivity of column names and values depend on the database configuration.
+
+### Filtering and Logical Operators
+
+**Filtering**
+Filtering is a way to reduce the data down to only the rows that you need.
+To filter data, you add a WHERE clause to a query. 
+A query can have multiple filtering conditions. You need to use a logical operator to account for complex filtering needs. 
+
+**Sorting**
+When querying a database, you frequently specify the order in which you want your results to return. The ORDER BY clause is the component of a SQL query that makes sorting possible.
+
+**Date Functions**
+Storing date information about an event facilitates analysis across time.
+
+### Logical Functions
+Logical functions can make data substitutions when retrieving data. 
+
+The IFF function has the following syntax:
+IFF(boolean_expression, true_value, false_value)
+
+IFF function expects the following three parameters:
+
+1. Boolean Expression:  The expression must return either TRUE or FALSE.
+2. True Value:  If the Boolean expression returns TRUE, the IFF function will return this value.
+3. False Value:  If the Boolean expression returns FALSE, the IFF function will return this value.
+
+### Aggregate Functions
+Aggregate functions are an easy way to summarize data. Aggregate functions summarize a query's data and return a single value. 
+
+**Common SQL aggregate functions**
+1. COUNT - Returns the total number of rows of a query.
+2. MIN - Returns the minimum value from the results of a query. Note that this works on both alphanumeric and numeric data types.
+3. MAX - Returns the maximum value from the results of a query. Note that this works on both alphanumeric and numeric data types.
+4. AVG - Returns the mathematic average of the results of a query.
+5. SUM - Returns the sum of the results of a query.
+6. STDDEV - Returns the sample standard deviation of the results of a query.
+
+### Query Optimization
+**There are several factors to consider when creating well-performing SQL.**
+1. Parametrization
+   Effective use of parameterization reduces the number of times the database has to parse individual queries.
+2. Indexing
+   To speed up query performance, you need a database index. A database index works like the index in the back of a book.A database index can point to a single column or multiple columns. When running queries on      large tables, it is ideal if all of the columns you are retrieving exist in the index. If that is not feasible, you at least want the first column in your SELECT statement to be covered by an index.
+   While indexing improves query speed, it slows down create, update, and delete activity. An indexing strategy needs to match the type of system the database supports, be it transactional or reporting.
+3. Data Subsets and Temporary Tables
+   When dealing with large data volumes, you may want to work with a subset of records. It is possible to create a temporary table to make the data more manageable. Temporary tables can store the results of a         query and are disposable. Temporary tables automatically get removed when the active session ends. Using temporary tables is an effective method of creating subsets for ad hoc analysis.
+4. Execution Plan
+   An execution plan shows the details of how a database runs a specific query. Execution plans are extremely helpful in troubleshooting query performance issues. They provide additional information about how a       query is spending its time.
+
+## Chapter 4: Data Quality
+### Data Quality Challenges
+
+**Duplicate Data**
+Duplicate data occurs when data representing the same transaction is accidentally duplicated within a system. 
+
 
 
 
