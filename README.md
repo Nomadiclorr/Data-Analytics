@@ -1,6 +1,6 @@
 # Module 1: The Basics of Data
 Data analytics is the collection, transformation, and organization of data in order to draw conclusions, make predictions, and drive informed decision making. It is a compelling subject that transcends industry boundaries. Data analytics can be branched into two primary components: conceptual understanding of data (theoretical aspect) and hands-on manipulation of data (practical aspect).
-To perform analytics, you need data. Data can come from internal systems you operate, or you can obtain it from third-party sources. 
+To perform analytics, you need data. Data can come from internal systems you operate, or you can obtain it from third-party sources.  
 
 ## Chapter 1: The Data Analyst
 The ultimate role of a data analyst is to transform raw data into actionable insights that guide decision-making processes within an organization.
